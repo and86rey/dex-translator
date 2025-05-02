@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DEX to ISO 15022 Translator</title>
+  <script defer src="dexSchema.js"></script>
+  <script defer src="dexToSwift.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; max-width: 900px; margin: auto; }
+    textarea { width: 100%; height: 300px; font-family: monospace; margin-bottom: 1rem; }
+    button { padding: 0.5rem 1rem; font-size: 1rem; }
+    pre { background: #f0f0f0; padding: 1rem; overflow-x: auto; }
+    .valid { color: green; }
+    .invalid { color: red; }
+  </style>
+</head>
+<body>
+  <h1>DEX → ISO 15022 Translator</h1>
+  <textarea id="dexInput" placeholder="Paste your DEX message here..."></textarea>
+  <br>
+  <button onclick="translateDex()">Validate & Translate</button>
+  <div id="result"></div>
+</body>
+</html>
